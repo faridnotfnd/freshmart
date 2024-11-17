@@ -1,0 +1,587 @@
+.menu-icon,
+.menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  #search-banner {
+    width: 1150px;
+  }
+
+  #search-banner {
+    width: 90%;
+    height: 500px;
+  }
+
+  #popular-product,
+  #populer-bundle-pack,
+  #download-app {
+    width: 90%;
+  }
+
+  #populer-bundle-pack {
+    padding: 50px 30px 0 30px;
+  }
+  .home-bg {
+    max-width: 100%; /* Sesuaikan agar tidak overflow */
+    height: 400px; /* Kurangi tinggi */
+    background-size: cover; /* Pastikan gambar tetap responsif */
+    border-radius: 10px; /* Kurangi radius untuk ukuran kecil */
+    margin: 0 5%; /* Atur margin agar tetap proporsional */
+  }
+  .home h3 {
+    font-size: 2rem;
+    margin-left: 8rem;
+    width: 400px;
+    position: relative;
+  }
+
+  .text {
+    margin-left: 10rem; /* Hilangkan margin kiri */
+    padding: 2rem 0; /* Sesuaikan padding */
+    font-size: 1.8rem; /* Kurangi ukuran font */
+  }
+
+  .banner-container {
+    margin-left: auto; /* Pusatkan container */
+    margin-right: auto; /* Pusatkan container */
+    width: 80%; /* Gunakan lebar proporsional */
+    max-width: 100%; /* Pastikan tidak melebihi viewport */
+  }
+
+  .banner {
+    width: 100%; /* Gunakan lebar penuh kontainer */
+    height: auto; /* Sesuaikan tinggi otomatis */
+  }
+
+  .banner img {
+    object-fit: cover; /* Pastikan gambar tetap sesuai kontainer */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-bg {
+    max-width: 90%; /* Lebar fleksibel untuk layar lebih kecil */
+    height: 450px; /* Kurangi tinggi untuk menjaga proporsi */
+    background-position: center; /* Tetap di tengah */
+    border-radius: 10px; /* Sesuaikan radius */
+    margin: 20px auto; /* Tambahkan margin atas-bawah */
+  }
+  .home h3 {
+    font-size: 2rem;
+    margin-left: 30px;
+    width: 400px;
+    position: relative;
+    left: 10px;
+    bottom: 12rem;
+  }
+
+  .text {
+    margin-left: 6rem; /* Mengurangi margin kiri */
+    padding-top: 3rem; /* Mengurangi padding atas */
+    font-size: 1.6rem; /* Ukuran font lebih kecil */
+  }
+
+  .banner-container {/* Margin lebih kecil */
+    width: 90%; /* Lebar lebih besar */
+    display: flex;
+  }
+
+  .banner {
+    height: 14rem; /* Kurangi tinggi */
+    width: 35rem; /* Kurangi lebar */
+  }
+
+  .banner img {
+    border-radius: 10px; /* Radius sudut lebih kecil */
+  }
+
+  .banner .content h3 {
+    font-size: 1.5rem; /* Ukuran heading lebih kecil */
+  }
+
+  .banner .content span {
+    font-size: 0.875rem; /* Ukuran teks lebih kecil */
+  }
+
+  .banner .content .btn {
+    width: 35%; /* Kurangi lebar tombol */
+  }
+  #search-banner {
+    background-size: 700px;
+  }
+
+  .bg-1 {
+    width: 150px;
+    height: 150px;
+    top: -20px;
+  }
+
+  #partner {
+    width: 90%;
+  }
+
+  .navigation {
+    justify-content: space-between;
+    height: 65px;
+    padding: 35px 25px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .navigation .menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    width: 100%;
+    border-bottom: 1px solid rgba(245, 245, 245);
+  }
+
+  .navigation .menu li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation .menu li a {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    margin: 0;
+    border: 1px solid rgba(248, 247, 247, 0.5);
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navigation .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+    position: relative;
+    user-select: none;
+    z-index: 2;
+  }
+
+  .navigation .menu-icon .nav-icon {
+    background-color: #141414cc;
+    display: block;
+    height: 2px;
+    width: 25px;
+    position: relative;
+    transition: background 0.2s ease-out;
+  }
+
+  .navigation .menu-icon .nav-icon::before,
+  .navigation .menu-icon .nav-icon::after {
+    background-color: #141414cc;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all ease-out 0.2s;
+  }
+
+  .navigation .menu-icon .nav-icon::before {
+    top: 7px;
+  }
+
+  .navigation .menu-icon .nav-icon::after {
+    top: -7px;
+  }
+
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
+
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+  }
+
+  .navigation .menu-btn:checked ~ .menu {
+    display: block;
+  }
+
+  .search-banner {
+    height: 400px;
+    background-size: 500px;
+  }
+
+  .bg-2 {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+  }
+
+  .product-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .client-box-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .partner-heading {
+    justify-content: center;
+  }
+
+  .logo-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo-container img {
+    margin: 10px;
+  }
+
+  #download-app {
+    flex-direction: column;
+    height: 100%;
+    background-color: transparent;
+    margin-top: 0;
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .app-img {
+    height: 450px;
+    width: 220px;
+  }
+
+  .download-app-text {
+    max-width: 100%;
+    background-color: #ecf7ee;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 820px) {
+  .home-bg {
+    max-width: 90%; /* Lebar proporsional untuk layar kecil */
+    height: 400px; /* Tinggi lebih kecil */
+    border-radius: 10px; /* Radius lebih kecil */
+    margin: 20px auto; /* Tambahkan margin atas-bawah */
+  }
+  .home h3 {
+    font-size: 1.8rem;
+    margin-left: 30px;
+    width: 300px;
+    position: relative;
+    left: 10px;
+    bottom: 130px;
+  }
+  .banner-container {
+    grid-template-columns: 1fr; /* Ubah layout menjadi satu kolom */
+    margin-left: 10vw; /* Sesuaikan margin agar lebih kecil */
+    width: 90%; /* Lebar disesuaikan ke layar */
+  }
+
+  .banner {
+    height: 15rem; /* Kurangi tinggi elemen */
+    width: 100%; /* Lebar mengikuti ukuran grid */
+  }
+
+  .banner img {
+    border-radius: 10px; /* Kurangi radius untuk menyesuaikan proporsi */
+  }
+
+  .text {
+    margin-left: 10vw; /* Kurangi margin kiri teks */
+    font-size: 1.5rem; /* Sesuaikan ukuran font */
+  }
+
+  .btn {
+    width: 70%; /* Tombol lebih besar */
+  }
+}
+
+/* Untuk tampilan di bawah 768px (misalnya, ukuran ponsel) */
+@media screen and (max-width: 768px) {
+  .banner-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #search-banner {
+    height: 300px;
+  }
+
+  .search-banner-text {
+    margin-left: 20px;
+  }
+
+  .bg-1 {
+    display: none;
+  }
+
+  .client-box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    margin-left: 50px;
+  }
+
+  .text h3 {
+    margin-left: -100px;
+    font-size: 1.5rem;
+    /* Ukuran font yang lebih kecil */
+  }
+
+  .banner-container .banner {
+    width: 100%;
+    /* Lebar penuh */
+  }
+
+  .banner-container .banner .content {
+    left: 30px;
+    /* Atur posisi konten ke kiri */
+    transform: translateY(-50%);
+  }
+
+  .banner-container .banner .content h3 {
+    font-size: 1.5rem;
+    /* Ukuran font yang lebih kecil */
+  }
+
+  .banner-container .banner .content span {
+    font-size: 1rem;
+  }
+
+  .banner-container .banner .content p {
+    font-size: 1rem;
+    /* Ukuran font yang lebih kecil */
+  }
+
+  .client-box-container {
+    margin-right: 35px;
+  }
+
+  footer {
+    bottom: unset;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+
+  .text {
+    margin-right: 500px;
+  }
+
+  .home h3 {
+    font-size: 1.4rem;
+    margin-left: 30px;
+    width: 200px;
+    position: relative;
+    left: 10px;
+    bottom: 80px;
+  }
+
+  .text {
+    margin-right: 500px;
+  }
+
+  .banner-container {
+    display: block;
+  }
+
+  .banner-container .banner {
+    position: relative;
+    width: 90%;
+    left: 30px;
+    padding-bottom: 30px;
+  }
+
+  .home h3 {
+    font-size: 1.3rem;
+    margin-left: 30px;
+    width: 200px;
+    position: relative;
+    left: 10px;
+    bottom: 80px;
+  }
+  .home h3 {
+    font-size: 1.3rem;
+    margin-left: 30px;
+    width: 200px;
+    position: relative;
+    left: 10px;
+    bottom: 80px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #search-banner {
+    height: 300px;
+    background-size: 300px;
+  }
+
+  .text {
+    margin-right: 500px;
+  }
+
+  .home-bg {
+    width: 90%; /* Lebar diperbesar hingga hampir memenuhi layar */
+    max-width: 1250px; /* Tetap menjaga batas maksimal lebar */
+    height: 500px; /* Tinggi tidak berubah */
+    background-size: cover; /* Pastikan gambar memenuhi elemen */
+    margin: 0 auto;
+  }
+
+  .home h3 {
+    font-size: 1.6rem;
+    margin-left: 30px;
+    width: 300px;
+    position: relative;
+    left: 10px;
+    bottom: 70px;
+  }
+
+  .search-banner-text {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+    padding-left: 10px;
+  }
+
+  .search-box i {
+    font-size: 1rem;
+  }
+
+  .search-box .search-btn {
+    height: 30px;
+  }
+
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+
+  #populer-bundle-pack {
+    padding: 30px 20px 0 20px;
+  }
+  .text h3 {
+    position: relative;
+    left: 130px;
+    font-size: 1.6rem;
+  }
+  .banner-container {
+    margin-left: 0.5vh;
+  }
+  .client-box-container {
+    margin-left: 3.5vh;
+  }
+  .partner-heading h3{
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-heading h3,
+  .client-heading h3,
+  .partner-heading h3 {
+    font-size: 1.2rem;
+  }
+  .download-btns a {
+    flex-direction: column;
+  }
+
+  .download-btns a {
+    margin: 4px 0;
+    width: 140px;
+  }
+
+  .download-btns a img {
+    width: 100%;
+  }
+
+  .right-nav {
+    grid-gap: 5px;
+  }
+
+  .home-bg {
+    max-width: 100%; /* Sesuaikan agar lebar penuh layar */
+    height: 250px; /* Kurangi tinggi agar lebih proporsional */
+    background-size: cover; /* Mengubah ukuran background agar sesuai area */
+    border-radius: 10px; /* Kurangi radius untuk tampilan kecil */
+    margin: auto;
+  }
+  .home h3 {
+    font-size: 1.25rem;
+    width: 100%;
+    max-width: 140px;
+    top: -17vh;
+  }
+  .text h3 {
+    position: relative;
+    left: 100px;
+    font-size: 1.2rem;
+  }
+  .banner-container {
+    margin-left: -1vh;
+  }
+  .client-box-container {
+    margin-left: 4vh;
+  }
+  .partner-heading h3{
+    margin-left: 1.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .home h3 {
+    font-size: 1.25rem;
+    width: 100%;
+    max-width: 120px;
+    top: -12vh;
+  }
+  .text h3 {
+    position: relative;
+    left: 100px;
+    font-size: 1.2rem;
+  }
+  .banner-container {
+    margin-left: -2vh;
+  }
+  .client-box-container {
+    margin-left: 5.5vh;
+  }
+  .partner-heading h3{
+    margin-left: 1.5rem;
+  }
+}
